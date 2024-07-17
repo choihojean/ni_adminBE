@@ -55,7 +55,8 @@ public class Manpower {
 
     private String evaluationContent;
 
-    private boolean isBlacklisted;
+    @Column(nullable = false)
+    private String isBlacklisted;  // boolean에서 String으로 변경
 
     private String blacklistReason;
 
@@ -215,12 +216,12 @@ public class Manpower {
         this.evaluationContent = evaluationContent;
     }
 
-    public boolean isBlacklisted() {
+    public String getIsBlacklisted() {
         return isBlacklisted;
     }
 
-    public void setBlacklisted(boolean blacklisted) {
-        isBlacklisted = blacklisted;
+    public void setIsBlacklisted(String isBlacklisted) {
+        this.isBlacklisted = isBlacklisted;
     }
 
     public String getBlacklistReason() {

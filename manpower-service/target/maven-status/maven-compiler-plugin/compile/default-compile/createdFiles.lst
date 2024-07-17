@@ -1,5 +1,8 @@
-egovframe\manpower\ManpowerServiceApplication.class
 egovframe\manpower\service\ManpowerService.class
+egovframe\manpower\config\ManpowerConfig.class
 egovframe\manpower\controller\ManpowerController.class
+egovframe\manpower\config\SwaggerConfig.class
 egovframe\manpower\repository\ManpowerRepository.class
+egovframe\manpower\config\ManpowerConfig$1.class
+egovframe\manpower\ManpowerServiceApplication.class
 egovframe\manpower\entity\Manpower.class

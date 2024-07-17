@@ -1,13 +1,12 @@
 package egovframe.manpower.service;
 
-import java.util.List;
-import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import egovframe.manpower.entity.Manpower;
 import egovframe.manpower.repository.ManpowerRepository;
+
+import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ManpowerService {
@@ -48,7 +47,7 @@ public class ManpowerService {
         manpower.setAdditionalSkills(manpowerDetails.getAdditionalSkills());
         manpower.setEvaluationCode(manpowerDetails.getEvaluationCode());
         manpower.setEvaluationContent(manpowerDetails.getEvaluationContent());
-        manpower.setBlacklisted(manpowerDetails.isBlacklisted());
+        manpower.setIsBlacklisted(manpowerDetails.getIsBlacklisted());
         manpower.setBlacklistReason(manpowerDetails.getBlacklistReason());
         manpower.setProfile(manpowerDetails.getProfile());
 
