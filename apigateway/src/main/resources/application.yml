@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: apigateway
+  cloud:
+    gateway:
+      routes:
+        - id: manpower-service
+          uri: lb://manpower-service
+          predicates:
+            - Path=/manpower/**
+          filters:
+            - RewritePath=/manpower/(?<segment>.*), /${segment}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

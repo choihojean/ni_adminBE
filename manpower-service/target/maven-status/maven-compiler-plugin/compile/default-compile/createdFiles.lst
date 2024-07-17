@@ -1,0 +1,5 @@
+egovframe\manpower\ManpowerServiceApplication.class
+egovframe\manpower\service\ManpowerService.class
+egovframe\manpower\controller\ManpowerController.class
+egovframe\manpower\repository\ManpowerRepository.class
+egovframe\manpower\entity\Manpower.class
